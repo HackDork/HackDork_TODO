@@ -1,13 +1,14 @@
 package main
 
 import (
-	"github.com/divrhino/divrhino-trivia/database"
+	. "github.com/HackDork/HackDork_TODO/database"
+	. "github.com/HackDork/HackDork_TODO/routes"
 	"github.com/gofiber/fiber/v2"
 	"github.com/gofiber/template/html"
 )
 
 func main() {
-	database.ConnectDb()
+	ConnectDb()
 
 	engine := html.New("./views", ".html")
 
@@ -16,7 +17,7 @@ func main() {
 		ViewsLayout: "layouts/main",
 	})
 
-	setupRoutes(app)
+	SetupRoutes(app)
 
 	app.Static("/", "./public")
 

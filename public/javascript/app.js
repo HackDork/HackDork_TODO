@@ -1,7 +1,7 @@
 // Add click event to fact to show answer
 (() => {
-    const answerWrapper = document.querySelectorAll('.answer-wrapper');
-    const toggleBtns = document.querySelectorAll('.answer-toggle')
+    const answerWrapper = document.querySelectorAll('.assignee-wrapper');
+    const toggleBtns = document.querySelectorAll('.assignee-toggle')
 
     for (const ans of answerWrapper) {
         ans.style.display = 'none';

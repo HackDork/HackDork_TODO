@@ -1,15 +1,21 @@
 <div class="container">
-    <form id="new-form" method="POST" action="/fact">
-        <label for="question">
-            <span>Question</span>
-            <input id="question" type="text" name="question">
+    <form id="new-form" method="POST" action="/task">
+        <label for="taskname">
+            <span>TaskName</span>
+            <input id="taskname" type="text" name="taskname">
         </label>
 
-        <label for="answer">
-            <span>Answer</span>
-            <input id="answer" type="text" name="answer">
+        <label for="assignee">
+            <span>Assignee</span>
+            <input id="assignee" type="text" name="assignee">
         </label>
+        <label for="isDone"><span>IsDone</span>
+            <select name="isDone" id="isDone" >
+                <option value="true">True</option>
+                <option selected value="false">False</option>
+            </select>
 
+        </label>
         <input type="submit" value="Submit">
     </form>
 </div>

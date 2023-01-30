@@ -7,8 +7,8 @@ tmp_dir = "tmp"
 
 [build]
 # Just plain old shell command. You could use `make` as well.
-cmd = "go build -o ./tmp/main ./cmd"
-# Binary file yields from `cmd`.
+cmd = "go build -o ./tmp/main ./"
+# Binary file yields from `routes`.
 bin = "tmp/main"
 # Customize binary, can setup environment variables when run your app.
 full_bin = "APP_ENV=dev APP_USER=air ./tmp/main"

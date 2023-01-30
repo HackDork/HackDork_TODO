@@ -64,13 +64,12 @@ body {
 
     background: hsla(64, 41%, 92%, 1);
 
-    background: linear-gradient(315deg, hsla(64, 41%, 92%, 1) 0%, hsla(196, 83%, 84%, 1) 50%, hsla(305, 75%, 83%, 1) 100%);
+    background: linear-gradient(315deg, hsla(64, 41%, 92%, 1) 0%, hsla(196, 83%, 84%, 1) 100%);
     
-    background: -moz-linear-gradient(315deg, hsla(64, 41%, 92%, 1) 0%, hsla(196, 83%, 84%, 1) 50%, hsla(305, 75%, 83%, 1) 100%);
+    background: -moz-linear-gradient(315deg, hsla(64, 41%, 92%, 1) 0%, hsla(196, 83%, 84%, 1) 100%);
     
-    background: -webkit-linear-gradient(315deg, hsla(64, 41%, 92%, 1) 0%, hsla(196, 83%, 84%, 1) 50%, hsla(305, 75%, 83%, 1) 100%);
-    
-    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#F2F3E2", endColorstr="#B2E5F8", GradientType=1 );
+    background: -webkit-linear-gradient(315deg, hsla(64, 41%, 92%, 1) 0%, hsla(196, 83%, 84%, 1) 100%);
+
 }
 
 button {
@@ -122,7 +121,7 @@ form label span {
 form input {
     width: 100%;
     padding: 5px 16px;
-    border-radius: 3px;
+    border-radius: 1px;
     font-family: 'Merriweather', Georgia, 'Times New Roman', Times, serif;
     font-size: 14px;
 }
@@ -206,10 +205,10 @@ form input[type="submit"] {
 }
 
 .container {
-    max-width: 700px;
+    max-width: 400px;
     width: 100%;
-    margin-top: 40px;
-    padding: 30px 20px;
+    margin-top: 25px;
+    padding: 20px 10px;
     background-color: white;
     border-radius: 10px;
 }
@@ -240,7 +239,7 @@ form input[type="submit"] {
     width: 80px;
 }
 
-.fact-item {
+.task-item {
     display: flex;
     flex-direction: column;
     justify-content: column;
@@ -251,18 +250,18 @@ form input[type="submit"] {
     border-radius: 10px;
 }
 
-.fact-item .question-wrapper {
+.task-item .task-wrapper {
     display: flex;
     justify-content: space-between;
 }
 
-.fact-item .answer-toggle {
+.task-item .assignee-toggle {
     flex-basis: 10%;
     align-self: flex-start;
-    background-color: #f4e6f3;
-    border: 1px solid #f4b3ef;
+    background-color: #F0F8FF;
+    border: 1px solid #000000;
     padding: 5px 10px;
-    color: #bd65b6;
+    color: #4682B4;
     font-size: 10px;
     font-weight: 700;
     text-decoration: none;
@@ -271,25 +270,30 @@ form input[type="submit"] {
     cursor: pointer;
 }
 
-.fact-item .question {
+.task-item .taskname {
     margin-bottom:10px;
 }
 
-.fact-item .answer {
-    color: #bd65b6;
+.task-item .isDone{
+    color: #6495ED;
     font-style: italic;
 }
 
-.fact-item .fibre-content {
+.task-item .assignee {
+    color: #6495ED;
     font-style: italic;
 }
 
-.no-facts,
+.task-item .fibre-content {
+    font-style: italic;
+}
+
+.no-tasks,
 .add-more {
     display: flex;
     flex-direction: column;
     align-items: center;
-    line-height: 30px;
+    line-height: 20px;
 }
 
 .all-errors {

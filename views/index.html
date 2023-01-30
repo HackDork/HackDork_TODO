@@ -1,20 +1,23 @@
 <div class="container">
-    {{if .Facts}}
-        {{ range .Facts }}
-            <div class="fact-item">
-                <div class="question-wrapper">
-                    <p class="question">{{ .Question }}</p>
-                    <button id="answer-toggle" class="answer-toggle">Toggle answer</button>
+    {{if .Tasks}}
+        {{ range .Tasks }}
+            <div class="task-item">
+                <div class="task-wrapper">
+                    <p class="taskname">{{.TaskName}}</p>
+                    <button id="assignee-toggle" class="assignee-toggle">Toggle assignee</button>
                 </div>
-                <div class="answer-wrapper">
-                    <p class="answer">{{.Answer}}</p>
+                <div class="assignee-wrapper">
+                    <p class="assignee">{{.Assignee}}</p>
+                </div>
+                <div class="isdone-wrapper">
+                    <p class="isDone">{{.IsDone}}</p>
                 </div>
             </div>
         {{ end }}
     {{else}}
-        <div class="no-facts">
-            <p>No facts yet.</p>
-            <p><a href="/fact">Add now</a></p>
+        <div class="no-tasks">
+            <p>No Tasks yet.</p>
+            <p><a href="/task">Add now</a></p>
         </div>
     {{end}}
 </div>
