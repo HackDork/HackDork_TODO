@@ -1,4 +1,7 @@
-# Build a fullstack app with Go Fiber, Docker, and Postgres
+TODO APP
 
-- Text tutorial: https://divrhino.com/articles/full-stack-go-fiber-with-docker-postgres/
-- Video tutorial: https://youtu.be/B7hSjNbcVYM
+instruction to run 
+
+- fire command `docker compose up`
+
+this repo only supoort to create task with assignee via UI 
